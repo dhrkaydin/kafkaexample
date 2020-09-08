@@ -2,10 +2,9 @@ package com.kamil.producerexample.controller;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 public class KafkaController {
@@ -16,9 +15,13 @@ public class KafkaController {
         this.template = template;
     }
 
-    @GetMapping("/kafka/produce")
-    public void produce(@RequestParam String message) {
-        template.send("myTopic", message);
+    @GetMapping("/test")
+    public void test(){
+        System.out.println("test");
     }
 
+    @PostMapping("/kafka/produce")
+    public void produce(@RequestParam String message) {
+        template.send("exampleTopic", message);
+    }
 }

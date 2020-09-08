@@ -1,0 +1,13 @@
+{"namespace": "com.kamil.producerexample.models",
+  "type": "record",
+  "name": "Customer",
+  "fields": [
+    {"name": "id", "type": "int"},
+    {"name": "name", "type": "string"},
+    {"name": "age", "type": "int"},
+    {"name": "dateOfBirth", "type": "int"},
+    {"name": "address", "type": "string"},
+    {"name": "maritualStatus", "type": "string"},
+    {"name": "pensionProvider", "type": "string"}
+  ]
+}

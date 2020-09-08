@@ -1,0 +1,8 @@
+{"namespace": "com.kamil.producerexample.models",
+  "type": "record",
+  "name": "PensionProvider",
+  "fields": [
+    {"name": "id", "type": "int"},
+    {"name": "name", "type": "string"}
+  ]
+}
